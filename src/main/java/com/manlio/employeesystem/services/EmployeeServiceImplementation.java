@@ -35,4 +35,11 @@ public class EmployeeServiceImplementation implements EmployeeService {
         List<Employee> employees = employeeEntities.stream().map(employee -> new Employee(employee.getId(), employee.getFirstName(), employee.getLastName(), employee.getEmailId())).toList();
         return employees;
     }
+
+    @Override
+    public boolean deleteEmpleyee(Long id) {
+        EmployeeEntity employee = employeeRepository.findById(id).get();
+        employeeRepository.delete(employee);
+        return true;
+    }
 }
