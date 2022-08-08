@@ -1,4 +1,5 @@
-# Backend Employee Management System
+# Backend Employee Management System 🤖
+Creating a backend using Java Spring Boot 🍃
 
 # Read Me First 
 The following was discovered as part of building this project:
